@@ -79,7 +79,8 @@ db.get('1df395d13a7d99343442726fab001f40').then(function (doc) {
 //
 if (
   "serviceWorker" in navigator &&
-  !navigator.userAgent.match(/Trident.*rv\:11\./)
+  !navigator.userAgent.match(/Trident.*rv\:11\./) &&
+  false
 ) {
   window.addEventListener("load", function() {
     navigator.serviceWorker
