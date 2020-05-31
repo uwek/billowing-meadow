@@ -1,8 +1,8 @@
-import m from "/vendor/mithril.js";
-import PouchDB from "/vendor/pouchdb.min.js";
-import _ from "/vendor/lodash.min.js";
+import m from "../vendor/mithril.js";
+import PouchDB from "../vendor/pouchdb.min.js";
+import _ from "../vendor/lodash.min.js";
 
-import { NavBar, Footer } from "/src/layout.js";
+import { NavBar, Footer } from "./layout.js";
 
 var db = new PouchDB("mpskel");
 // var sync = PouchDB.sync(db, "https://mkskel-usr:xPm3d!m29@db.gunb.de/mkskel");

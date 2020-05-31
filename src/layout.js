@@ -1,4 +1,4 @@
-import m from "/vendor/mithril.js";
+import m from "../vendor/mithril.js";
 
 export var NavBar = {
   view: function() {
@@ -6,7 +6,7 @@ export var NavBar = {
       m(".header", [
         m("div.headerItem iconAdd", m.trust("&#8853;")),
         m("span.headerItem headerTitle", document.title),
-        m("input.headerItem searchField[type=text][placeholder=Suche]"),
+        m("input.headerItem searchField[type=text][placeholder=Suche]")
       ]),
       m("input.openSidebarMenu[type=checkbox][id=openSidebarMenu]"),
       m("label.sidebarIconToggle[for=openSidebarMenu]", [
