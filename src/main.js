@@ -1,7 +1,8 @@
+/*
 import m from "../vendor/mithril.js";
 import PouchDB from "../vendor/pouchdb.min.js";
 import _ from "../vendor/lodash.min.js";
-
+*/
 import { NavBar, Footer } from "./layout.js";
 
 var db = new PouchDB("mpskel");
@@ -62,7 +63,7 @@ var Home = {
   }
 };
 
-m.route(document.body, "/list", {
+m.route(document.body, "/", {
   "/": Home, // defines `https://localhost/#!/home`
   "/list": Page
 });
@@ -77,10 +78,10 @@ db.get('1df395d13a7d99343442726fab001f40').then(function (doc) {
 //
 // SW registrieren (nicht im IE11)
 //
+/*
 if (
   "serviceWorker" in navigator &&
-  !navigator.userAgent.match(/Trident.*rv\:11\./) &&
-  false
+  !navigator.userAgent.match(/Trident.*rv\:11\./)
 ) {
   window.addEventListener("load", function() {
     navigator.serviceWorker
@@ -93,3 +94,4 @@ if (
       });
   });
 }
+*/
